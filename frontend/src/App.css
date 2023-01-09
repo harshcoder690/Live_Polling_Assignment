@@ -1,0 +1,316 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Headers */
+
+.progressBar {
+    background-color: #2b80ff;
+    height: 8px;
+    transition: width 1s;
+    width: 10%;
+}
+
+.fa-user {
+    font-size: 48px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: white;
+}
+
+.homeBtn {
+    font-size: 48px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+
+/* New User - Name enter field */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #060607;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.step-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    transition: transform 1s;
+    /* align-items: center; */
+}
+
+.headText {
+    padding: 8px 0;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.input-field {
+    outline: 0;
+    background: none;
+    border: 0;
+    padding: 8px 0;
+    font-size: 60px;
+    font-weight: 700;
+    color: #727070;
+}
+
+.btn-container {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.form-btn {
+    border-radius: 50px;
+    padding: 12px 43px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    background-color: #e4e8ee;
+    border: 1px #4d3a3a solid;
+    box-shadow: 0 0 11px 6px #cbcbcb;
+    color: black;
+}
+
+::placeholder {
+    /* color: rgb(116, 143, 252); */
+    opacity: 1;
+    /* Firefox */
+}
+
+
+/* Teacher - Ask Question */
+
+.hide {
+    display: none;
+}
+
+.ask-container {
+    padding: 30px;
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50px;
+    margin: 50px auto auto auto;
+    align-items: normal;
+    height: auto;
+}
+
+#floatingInput {
+    height: 5rem;
+}
+
+.input-group {
+    margin-top: 30px;
+}
+
+.delete {
+    margin-right: 40px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.action-container {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.fa-plus-circle,
+.btn {
+    font-size: 3rem;
+    color: rgb(149, 149, 149);
+    margin-top: 30px;
+    width: 50px;
+}
+
+.btn {
+    font-size: 1rem;
+    width: 7rem;
+    margin-left: 30px;
+    border: 2px solid rgb(149, 149, 149);
+}
+
+#floatingInput:hover {
+    border: 2px solid #c5c7cd;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.fa-plus-circle:hover,
+.btn:hover {
+    color: #c5c7cd;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: whitesmoke;
+    background-color: #c5c7cd;
+    border: 2px solid #ebebeb;
+}
+
+.delete:hover {
+    background-color: #c5c7cd;
+}
+
+.successPoll {
+    display: flex;
+    align-items: center;
+}
+
+.successMsg {
+    margin: 0;
+}
+
+.successPoll>button {
+    margin-top: -5px;
+    margin-left: 30px;
+    background-color: #6ECB63;
+    color: whitesmoke;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    height: 35px;
+}
+
+.successPoll>button:hover {
+    transform: scale(1.02);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Create Room */
+
+.room-container {
+    display: flex;
+}
+
+.spinner {
+    height: 200px;
+}
+
+
+/* Live Result */
+
+.btn-container {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.form-control {
+    height: 3rem;
+    padding: 0px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-control:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+.percentage,
+.form-control .name {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 73px;
+    background: #e9ecef;
+    border: 1px solid #ced4da;
+}
+
+.form-control .name {
+    background: none;
+    border: none;
+    justify-content: start;
+    padding-left: 20px;
+}
+
+.timer {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.timerInput {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    padding: 0px;
+    width: 100vw;
+}
+
+.timerInputText {
+    position: absolute;
+    top: 10px;
+    font-size: 12px;
+}
